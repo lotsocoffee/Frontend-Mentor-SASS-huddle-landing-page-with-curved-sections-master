@@ -1,0 +1,501 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  color: hsl(192deg, 100%, 9%);
+}
+
+.mainContainer {
+  width: 375px;
+  margin: 0 auto 25px;
+}
+@media (min-width: 1440px) {
+  .mainContainer {
+    width: 1400px;
+    height: unset;
+    font-size: unset;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px auto 118px;
+  padding: 0 20px 0;
+}
+@media (min-width: 1440px) {
+  .navbar {
+    width: 1300px;
+    height: unset;
+    font-size: unset;
+  }
+}
+.navbar__logo {
+  width: 95px;
+  height: 16px;
+}
+@media (min-width: 1440px) {
+  .navbar__logo {
+    width: 240px;
+    height: 38px;
+    font-size: unset;
+  }
+}
+.navbar__button {
+  border-radius: 50px;
+  border: none;
+  background-color: #fff;
+  border: 1px solid hsl(321deg, 100%, 78%);
+  color: hsl(321deg, 100%, 78%);
+  height: 26px;
+  width: 80px;
+  display: block; /**/
+}
+.navbar__button:hover {
+  cursor: pointer;
+  background-color: hsl(321deg, 100%, 78%);
+  color: hsl(322deg, 100%, 66%);
+}
+@media (min-width: 1440px) {
+  .navbar__button {
+    width: 134px;
+    height: 42px;
+    font-size: unset;
+  }
+}
+
+.header__title, .section__yourCommunity__title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 265px;
+  font-size: 1.48em;
+  font-weight: 700;
+  margin: 0 auto 36px;
+}
+@media (min-width: 1440px) {
+  .header__title, .section__yourCommunity__title {
+    width: 1010px;
+    height: unset;
+    font-size: 2.98em;
+  }
+}
+.header__description {
+  text-align: center;
+  margin: 0 auto 49px;
+  font-weight: 600;
+  font-size: 0.81em;
+  line-height: 25px;
+  width: 290px;
+}
+@media (min-width: 1440px) {
+  .header__description {
+    width: 590px;
+    height: 80px;
+    font-size: 1.23em;
+  }
+}
+.header__button, .section__yourCommunity__button {
+  border-radius: 50px;
+  border: none;
+  background-color: hsl(322deg, 100%, 66%);
+  border: 1px solid unset;
+  color: hsl(207deg, 100%, 98%);
+  height: 40px;
+  width: 200px;
+  display: block; /**/
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+.header__button:hover, .section__yourCommunity__button:hover {
+  cursor: pointer;
+  background-color: hsl(321deg, 100%, 78%);
+  color: hsl(322deg, 100%, 66%);
+}
+@media (min-width: 1440px) {
+  .header__button, .section__yourCommunity__button {
+    width: 400px;
+    height: 80px;
+    font-size: 1.25em;
+  }
+}
+.header__screenMockup {
+  width: 300px;
+  display: block;
+  margin: 0 auto 138px;
+}
+@media (min-width: 1440px) {
+  .header__screenMockup {
+    width: 1020px;
+    height: 725px;
+    font-size: unset;
+  }
+}
+
+.sectionStats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(""), url("../images/bg-section-top-mobile-1.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position-y: top, bottom;
+}
+@media (min-width: 1440px) {
+  .sectionStats {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 800px;
+  }
+}
+.sectionStats .communities {
+  margin-bottom: 98px;
+}
+.sectionStats .communities__logo {
+  width: 32px;
+}
+.sectionStats .communities__stats {
+  font-size: 4em;
+  margin: 0; /*para quitar el margen que genera el h2*/
+}
+.sectionStats .communities__description {
+  /* @content permite anexar mas codigo para ese elemento  */
+  font-size: 0.8em;
+  text-align: center;
+}
+@media (min-width: 1440px) {
+  .sectionStats .communities__logo {
+    width: 50px;
+  }
+  .sectionStats .communities__stats {
+    font-size: 6em;
+    margin: 0;
+  }
+  .sectionStats .communities__description {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+.sectionStats .messages {
+  margin-bottom: 98px;
+}
+.sectionStats .messages__logo {
+  width: 24px;
+}
+.sectionStats .messages__stats {
+  font-size: 4em;
+  margin: 0; /*para quitar el margen que genera el h2*/
+}
+.sectionStats .messages__description {
+  width: 69px;
+  margin: 0 auto;
+  /* @content permite anexar mas codigo para ese elemento  */
+  font-size: 0.8em;
+  text-align: center;
+}
+@media (min-width: 1440px) {
+  .sectionStats .messages__logo {
+    width: 42px;
+  }
+  .sectionStats .messages__stats {
+    font-size: 6em;
+    margin: 0;
+  }
+  .sectionStats .messages__description {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+@media (min-width: 1440px) {
+  .sectionStats {
+    background-image: url(""), url("../images/bg-section-top-desktop-1.svg");
+  }
+}
+
+.section__growTogether {
+  background-color: hsl(207deg, 100%, 98%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0;
+}
+.section__growTogether .imageContainer__illustration {
+  width: 246px;
+  margin-bottom: 78px;
+}
+.section__growTogether .description__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.section__growTogether .description__content {
+  text-align: center;
+  font-size: 0.9em;
+  width: 330px;
+}
+@media (min-width: 1440px) {
+  .section__growTogether {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    height: 800px;
+  }
+  .section__growTogether .imageContainer__illustration {
+    width: 527px;
+  }
+  .section__growTogether .description__title {
+    font-size: 2.3em;
+    text-align: left;
+  }
+  .section__growTogether .description__content {
+    text-align: left;
+    font-size: 1em;
+    width: 495px;
+  }
+}
+
+.section__flowingConversations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0;
+  background-image: url("../images/bg-section-bottom-mobile-1.svg"), url("../images/bg-section-top-mobile-2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position-y: top, bottom;
+  /* ojo con el sass no me agarró el banner con las imagenes hasta que declare letra por letra entre comillado cada imagen y , para separar las img  */
+}
+.section__flowingConversations .imageContainer__illustration {
+  width: 246px;
+  margin-bottom: 78px;
+}
+.section__flowingConversations .description__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.section__flowingConversations .description__content {
+  text-align: center;
+  font-size: 0.9em;
+  width: 330px;
+}
+@media (min-width: 1440px) {
+  .section__flowingConversations {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 800px;
+  }
+  .section__flowingConversations .imageContainer__illustration {
+    width: 527px;
+  }
+  .section__flowingConversations .description__title {
+    font-size: 2.3em;
+    text-align: left;
+  }
+  .section__flowingConversations .description__content {
+    text-align: left;
+    font-size: 1em;
+    width: 495px;
+  }
+}
+@media (min-width: 1440px) {
+  .section__flowingConversations {
+    background-image: url("../images/bg-section-bottom-desktop-1.svg"), url("../images/bg-section-top-desktop-2.svg");
+  }
+}
+
+.section__YourUsers {
+  background-color: hsl(207deg, 100%, 98%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0;
+}
+.section__YourUsers .imageContainer__illustration {
+  width: 246px;
+  margin-bottom: 78px;
+}
+.section__YourUsers .description__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.section__YourUsers .description__content {
+  text-align: center;
+  font-size: 0.9em;
+  width: 330px;
+}
+@media (min-width: 1440px) {
+  .section__YourUsers {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    height: 800px;
+  }
+  .section__YourUsers .imageContainer__illustration {
+    width: 527px;
+  }
+  .section__YourUsers .description__title {
+    font-size: 2.3em;
+    text-align: left;
+  }
+  .section__YourUsers .description__content {
+    text-align: left;
+    font-size: 1em;
+    width: 495px;
+  }
+}
+
+.section__yourCommunity {
+  background-image: url("../images/bg-section-bottom-mobile-2.svg"), url("../images/bg-footer-top-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position-y: top, bottom;
+  height: 500px;
+  margin-top: 0;
+  padding-top: 200px;
+}
+@media (min-width: 1440px) {
+  .section__yourCommunity {
+    background-image: url("../images/bg-section-bottom-desktop-2.svg"), url("../images/bg-footer-top-desktop.svg");
+  }
+}
+.section__yourCommunity__title {
+  margin-top: 0;
+  /*  @extend  se utiliza para poner estilos ya echos en otra seccion y no usar otro mixin*/
+}
+.newsletter {
+  background-color: hsl(192deg, 100%, 9%);
+  color: #fff;
+  margin-top: -1px;
+  padding: 70px 24px 40px;
+}
+
+@media (min-width: 1440px) {
+  .newsletter {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 200px;
+    padding: 70px 116px 40px;
+  }
+}
+.newsletterSubscription {
+  margin-bottom: 100px;
+}
+.newsletterSubscription__title {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin-bottom: 28px;
+}
+.newsletterSubscription__description {
+  font-size: 0.95em;
+  margin-bottom: 28px;
+}
+.newsletterSubscription__input {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 16px;
+}
+.newsletterSubscription__submitContainer {
+  display: flex;
+  justify-content: end;
+}
+.newsletterSubscription__submit {
+  border-radius: 50px;
+  border: none;
+  background-color: hsl(322deg, 100%, 66%);
+  border: 1px solid unset;
+  color: hsl(207deg, 100%, 98%);
+  height: 52px;
+  width: 200px;
+  display: block; /**/
+  border-radius: 8px;
+  text-align: center; /* estas lineas entran en el mixin btn */
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.newsletterSubscription__submit:hover {
+  cursor: pointer;
+  background-color: hsl(321deg, 100%, 78%);
+  color: hsl(322deg, 100%, 66%);
+}
+@media (min-width: 1440px) {
+  .newsletterSubscription__submit {
+    width: 160px;
+    height: 55px;
+    font-size: 1.25em;
+  }
+}
+
+@media (min-width: 1440px) {
+  .newsletterSubscription {
+    display: flex;
+    width: 580px;
+    height: 241px; /* el height me va a permitir hacer caer el botn hasta bottom */
+  }
+  .newsletterSubscription__title {
+    font-size: 1.6em;
+  }
+  .newsletterSubscription__description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+  .newsletterSubscription__input {
+    width: 93.5%;
+  }
+  .newsletterSubscription__submitContainer {
+    align-items: flex-end;
+  }
+}
+.newsletterContact__whiteLogo {
+  width: 206px;
+  margin-bottom: 18px;
+}
+.newsletterContact__description {
+  font-size: 0.9em;
+  margin-bottom: 28px;
+}
+.newsletterContact__phoneContainer {
+  margin-bottom: 15px;
+}
+.newsletterContact__emailContainer {
+  margin-bottom: 50px;
+}
+.newsletterContact__anchor {
+  text-decoration: none;
+  color: hsl(207deg, 100%, 98%);
+  margin-left: 20px;
+}
+.newsletterContact__socialContainer {
+  width: 110px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 1440px) {
+  .newsletterContact__whiteLogo {
+    width: 250px;
+  }
+  .newsletterContact__description {
+    font-size: 1.1em;
+    width: 370px;
+  }
+}
+/*Frontend Mentors Footer*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.attribution a {
+  color: hsl(228deg, 78%, 82%);
+}
+
+/*# sourceMappingURL=styles.css.map */
